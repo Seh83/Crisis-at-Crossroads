@@ -7,9 +7,9 @@
 
 /* Body styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f9;
+  background-color: #e1fcfd; /* Very Light Aqua background */
   color: #333;
   padding: 20px;
 }
@@ -19,17 +19,24 @@ header {
   text-align: center;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: #1d3557;
-  color: #fff;
+  background: linear-gradient(
+    135deg,
+    #394f8a,
+    #4a5fc1
+  ); /* Gradient with Deep Blue and Vibrant Blue */
+  color: #e1fcfd; /* Very Light Aqua text */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 10px;
+  color: #9cf6fb; /* Bright Aqua text for emphasis */
 }
 
 header p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 300;
 }
 
@@ -37,14 +44,62 @@ header p {
 section#pdf-viewer {
   background: #ffffff;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-section#pdf-viewer h2 {
-  text-align: center;
-  color: #333;
+canvas {
+  max-width: 100%;
+  border: 1px solid #ccc;
   margin-bottom: 15px;
+}
+
+/* Controls styling */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+  background: linear-gradient(
+    135deg,
+    #e5b9a8,
+    #ead6cd
+  ); /* Gradient with Soft Peach and Muted Sand */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background: linear-gradient(
+    135deg,
+    #ead6cd,
+    #e5b9a8
+  ); /* Invert gradient on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#pdf-download {
+  font-size: 14px;
+}
+
+.page-info {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #394f8a; /* Deep Blue */
 }
 
 /* Footer styling */
@@ -52,6 +107,12 @@ footer {
   text-align: center;
   margin-top: 20px;
   padding: 10px;
-  background-color: #1d3557;
-  color: #ffffff;
+  background: #394f8a; /* Deep Blue background */
+  color: #e1fcfd; /* Very Light Aqua text */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  font-size: 1em;
 }
