@@ -50,4 +50,4 @@ document.getElementById("next-page").addEventListener("click", () => {
 });
 
 // Load your PDF
-loadPDF("Homeless_Schizodraft.pdf");
+loadPDF("Homeless_Schizodraft_Updated.pdf");
